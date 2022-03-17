@@ -3,6 +3,9 @@
 #define STRFUNCS_H
 using namespace std;
 #include <string>
+
+string justLowerLetters(string x);
+
 bool isAnagram(string s1, string s2);
 
 bool isPalindrome(const string s1);
