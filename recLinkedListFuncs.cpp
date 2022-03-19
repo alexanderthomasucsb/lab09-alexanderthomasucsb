@@ -7,7 +7,7 @@
 //if head is null return 0
 int recursiveSum(Node* head) {
   
-	if(head == null){return 0}
+	if(head == NULL){return 0;}
 	else{
 		return head->data + recursiveSum(head->next);
 	}
@@ -17,8 +17,8 @@ int recursiveSum(Node* head) {
 //return the largest value in the linked list using a recursive approach
 //you may assume the list has at least one element
 int recursiveLargestValue(Node* head) {
-	int largest = head->data
-	if(head->next == null){return largest;}
+	int largest = head->data;
+	if(head->next == NULL){return largest;}
 	int next = recursiveLargestValue(head->next);
 	if(largest > next){return largest;}
 	else{return next;}
